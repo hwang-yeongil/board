@@ -61,7 +61,4 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
                	.exceptionHandling().accessDeniedPage("/user/denied");
 	}
 	
-	
-	
-	
 }

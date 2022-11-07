@@ -11,6 +11,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.example.board.domain.MemberEntity;
@@ -18,6 +19,10 @@ import com.example.board.domain.MemberRepository;
 import com.example.board.domain.Role;
 import com.example.board.dto.MemberDto;
 
+import lombok.AllArgsConstructor;
+
+@Service
+@AllArgsConstructor
 public class MemberService implements UserDetailsService{
 	private MemberRepository memberRepository;
 	

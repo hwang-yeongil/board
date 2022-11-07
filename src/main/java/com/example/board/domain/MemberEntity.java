@@ -2,14 +2,15 @@ package com.example.board.domain;
 
 import javax.persistence.*;
 
+import lombok.AccessLevel;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
 
-@NoArgsConstructor
+
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Getter
-@Setter
+@Entity
 @Table(name = "member")
 public class MemberEntity {
 	@Id

@@ -25,7 +25,7 @@ public class BoardController {
 		return "Hello World";
 	}
 	
-	@GetMapping("/")
+	@GetMapping("/s")
 	public String list(Model model) {
 		List<BoardDto> boardList = boardService.getBoardlist();
 		model.addAttribute("boardList",boardList);
